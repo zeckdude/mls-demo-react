@@ -1,6 +1,7 @@
 {
   "name": "mls-demo-react",
   "version": "0.1.0",
+  "homepage": "https://zeckdude.github.io/mls-demo-react",
   "private": true,
   "dependencies": {
     "axios": "^0.17.0",
@@ -34,13 +35,16 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "predeploy": "npm run build",
+    "deploy" : "npm run build&&gh-pages -d build"
   },
   "devDependencies": {
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0"
+    "eslint-plugin-react": "^7.4.0",
+    "gh-pages": "^1.1.0"
   }
 }
